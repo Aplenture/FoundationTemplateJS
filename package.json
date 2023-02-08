@@ -9,7 +9,7 @@
     "scripts": {
         "build": "rm -rf dist; mkdir dist; tsc -p tsconfig.json; npm test",
         "test": "mocha -r ts-node/register 'tests/**/*.ts' --timeout 6000",
-        "start": "node dist/index"
+        "postinstall": "npm run build"
     },
     "repository": {
         "type": "git",
